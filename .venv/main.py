@@ -39,7 +39,7 @@ async def update_todo(todo_id: int, todo_obj: Todo):
         if todo.id == todo_id:
             #todo.id = todo_id
             todo.item = todo_obj.item
-            return {"todo": todo}
+            return {"todo": todo} 
     return{"todos": "No todos found to update"}
 
 # delete a todo
