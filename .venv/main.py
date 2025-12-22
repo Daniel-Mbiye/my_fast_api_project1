@@ -1,9 +1,11 @@
 from fastapi import FastAPI
 from models import Todo
 
+# Simple CRUD API 
+
 app = FastAPI()
 
-#items = []
+items = []
 
 @app.get ("/")
 async def root():
